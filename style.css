@@ -1,0 +1,38 @@
+ul.ddmenu {
+   margin: 0px;               /* メニューバー外側の余白(ゼロ) */
+   padding: 0px 0px 0px 15px; /* メニューバー内側の余白(左に15px) */
+   background-color: #cc0000; /* バーの背景色(濃い赤色) */
+}
+
+ul.ddmenu li {
+   width: 125px;           /* メニュー項目の横幅(125px) */
+   display: inline-block;  /* 横並びに配置する */
+   list-style-type: none;  /* リストの先頭記号を消す */
+   position: relative;     /* サブメニュー表示の基準位置にする */
+}
+
+ul.ddmenu a {
+   background-color: #cc0000; /* メニュー項目の背景色(濃い赤色) */
+   color: white;              /* メニュー項目の文字色(白色) */
+   line-height: 40px;         /* リンクの高さ(40px) */
+   text-align: center;        /* 文字列の中央寄せ */
+   text-decoration: none;     /* 下線を消す */
+   font-weight: bold;         /* 太字 */
+   display: block;            /* 項目内全域をリンク可能にする */
+}
+
+ul.ddmenu ul {
+   display: none;       /* 標準では非表示 */
+   margin: 0px;
+   padding: 0px;
+   position: absolute;  /* 絶対配置 */
+}
+
+ul.ddmenu a:hover {
+   background-color: #ffdddd; /* 背景色(淡いピンク) */
+   color: #dd0000;            /* 文字色(濃い赤) */
+}
+
+ul.ddmenu li:hover ul {
+   display: block; /* マウスが載った項目の内部にあるリストを表示 */
+}
